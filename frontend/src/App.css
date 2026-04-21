@@ -1,0 +1,123 @@
+/* General Setup */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif; /* A classic perfume-style font */
+  background-color:lavender; 
+  color: plum;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #F3E5F5;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: #ba68c8;
+  text-transform: uppercase;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  padding: 10px 25px;      /* Medium button size */
+  background-color: white; 
+  color: #ba68c8;
+  border: 2px solid #ba68c8;
+  border-radius: 30px;     /* Rounded edges for a modern look */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #ba68c8; /* Invert colors on hover */
+  color: white;
+  transform: scale(1.05); /* Slight lift effect */
+}
+
+
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url('https://i.postimg.cc/RVQ6J1zy/profile.jpg'); /* Replace with your actual link */
+  background-size: cover;
+  background-position: center;
+  height: 90vh; /* This makes it cover 80% of the screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  /* ... keep your other background styles ... */
+}
+
+
+.hero h1 { font-size: 4rem; 
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif; }
+
+.shop-btn {
+  padding: 12px 30px;
+  background: pink;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.shop-btn:hover { background: #000; color: powderblue; }
+
+/* The Grid */
+.container { padding: 50px 10%; }
+.section-title { text-align: center; margin-bottom: 40px; letter-spacing: 2px; }
+
+.perfume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 50px 10%; 
+}
+
+/* Product Cards */
+.perfume-card {
+  border: 1px solid #f0f0f0;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.perfume-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transform: translateY(-5px);
+}
+
+.image-container img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-info { padding: 20px; text-align: center; }
+.brand { color:rgb(128, 9, 0); font-style: italic; }
+.price { font-weight: bold; font-size: 1.2rem; margin: 10px 0; }
+
+.view-btn {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.view-btn:hover { background: #333; color:paleturquoise; }
