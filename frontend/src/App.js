@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';       // <--- Add this
-import Collection from './pages/Collection'; // <--- Add this
+import Home from './pages/Home';       
+import Collection from './pages/Collection';
+import AddPerfume from './pages/AddPerfume'; 
 import './App.css';
 
 function App() {
@@ -12,13 +13,14 @@ function App() {
           <div className="logo">ESSENCE</div>
           <div className="nav-buttons">
             <Link to="/"><button className="nav-btn">Home</button></Link>
-            <Link to="/collection"><button className="nav-btn">Collection</button></Link>
+            <Link to="/collection"><button className="nav-btn">Collection</button></Link>            
           </div>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/collection" element={<Collection />} />
+          <Route path="/add-perfume" element={<AddPerfume />} />
         </Routes>
       </div>
     </Router>
